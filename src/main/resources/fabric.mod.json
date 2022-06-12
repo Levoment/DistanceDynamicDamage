@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+	"id": "distancedynamicdamage",
+  "version": "${version}",
+
+	"name": "Distance Dynamic Damage",
+  "description": "Change the damage a player cause depending on the distance of the player to the target.",
+  "authors": [
+		"Levoment"
+  ],
+  "contact": {
+    "homepage": "https://github.com/Levoment/DistanceDynamicDamage",
+    "sources": "https://github.com/Levoment/DistanceDynamicDamage"
+  },
+
+	"license": "Unlicense",
+	"icon": "assets/distancedynamicdamage/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+		"com.github.levoment.distancedynamicdamage.DistanceDynamicDamageMod"
+    ]
+  },
+  "mixins": [
+		"distancedynamicdamage.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": ">=0.55.3+1.19",
+	"minecraft": "1.19",
+    "java": ">=17"
+  }
+}
