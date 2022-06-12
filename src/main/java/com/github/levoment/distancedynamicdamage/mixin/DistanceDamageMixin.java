@@ -28,7 +28,7 @@ public abstract class DistanceDamageMixin extends Entity {
 			// Get the distance between the player and the target
 			double distance = targetBlockPos.distanceTo(currentPos);
 			// Calculate the damage
-			float result = (float) ((amount / distance) * DistanceDynamicDamageMod.DYNAMIC_DAMAGE);
+			float result = (float) ((amount/Math.max(1, distance))*DistanceDynamicDamageMod.DYNAMIC_DAMAGE);
 			// Use the new damage amount
 			return instance.damage(source, result);
 		}

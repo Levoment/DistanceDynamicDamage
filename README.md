@@ -10,7 +10,7 @@ on the distance the attacking player is to the target.
 ## Usage
 The distance dynamic damage formula is:
 
-`(calculated game damage / distance to target) * DynamicDamageMultiplier`
+`(calculated game damage / Math.max(1, distance to target)) * DynamicDamageMultiplier`
 
 The `DynamicDamageMultiplier` is by default `1.5` and it can be set on the configuration file
 of the mod that is on the config folder of the minecraft instance. The file name is
